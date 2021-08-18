@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Decentralized Ethereum Token Exchange",
   "author": "jeremiahdamiron@gmail.com",
+  "engines": {
+    "node": "12.16.2"
+  },
   "private": true,
   "dependencies": {
     "apexcharts": "^3.27.1",
