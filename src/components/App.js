@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   async loadBlockchainData(dispatch) {
-    const web3 = await loadWeb3(dispatch || 'http://localhost:7545')
+    const web3 = await loadWeb3(dispatch)
     const networkId = await web3.eth.net.getId()
     await loadAccount(web3, dispatch)
     const token = await loadToken(web3, networkId, dispatch)
